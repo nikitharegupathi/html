@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, intial-scale=1.0">
+            <title>Market Hub</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+            <link rel="icon" href="E:\html\grocery.html\shop.png">
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        </meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+      <link rel="stylesheet" href="service.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+      <title>Market Hub</title>
+   </head>
+   <body>
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">Service Hub</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">About Us</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Services</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Featured</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Contact Me</a>
+                  </li>
+                  <button id="loginButton" class="button-10" role="button">Login</button>
+
+               </ul>
+
+            </div>
+         </nav>
+         </header>
+         <div class="container1">
+            <h1>Search Form</h1>
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Enter your search term...">
+                <button type="submit">Search</button>
+            </form>
+            <div id="searchResults"></div>
+        </div>
+        <div class="mySlides fade">
+         <div class="numbertext">1 / 3</div>
+         <img src="C:\Users\jagan\OneDrive\Documents\image1.jpg" style="width:100%">
+         <div class="text">Caption Text</div>
+       </div>
+     
+       <div class="mySlides fade">
+         <div class="numbertext">2 / 3</div>
+         <img src="C:\Users\jagan\OneDrive\Documents\image2.jpg" style="width:100%">
+         <div class="text">Caption Two</div>
+       </div>
+     
+       <div class="mySlides fade">
+         <div class="numbertext">3 / 3</div>
+         <img src="C:\Users\jagan\OneDrive\Documents\image3.jpg" style="width:100%">
+         <div class="text">Caption Three</div>
+       </div>
+     
+       <!-- Next and previous buttons -->
+       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     </div>
+     <br>
+     
+     <!-- The dots/circles -->
+     <div style="text-align:center">
+       <span class="dot" onclick="currentSlide(1)"></span>
+       <span class="dot" onclick="currentSlide(2)"></span>
+       <span class="dot" onclick="currentSlide(3)"></span>
+     </div>
+     <header class="household"><p>Household Appliances</p></header>
+      <div class="gallery d-flex flex-row justify-content-start">
+        <div class="margin">
+        <a href="C:\Users\jagan\OneDrive\Documents\fan1.jpg"><img src="C:\Users\jagan\OneDrive\Documents\fan2.jpg"></a>
+        <div class="product">
+          <h2>Feel the breeze of innovation with every spin of our ceiling fan</h2>
+          <p>Basic ceiling fans: ₹1,000 to ₹2,000
+            Decorative ceiling fans with lights or unique designs: ₹2,000 to ₹5,000</p> 
+          <div class="button-container">
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="shopNow()">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="margin">
+        <a href="C:\Users\jagan\OneDrive\Documents\waterpurifier.jpg"><img src="C:\Users\jagan\OneDrive\Documents\purifier2.jpg"></a>
+        <div class="product">
+          <h2>Stay hydrated and healthy with clean, crisp water straight from our innovative purifier</h2>
+          <p>RO (Reverse Osmosis) water purifiers: ₹8,000 to ₹20,000</p>
+          an class="rating-value">4.0</span>
+        
+          <div class="button-container">
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="shopNow()">Shop Now</button>
+          </div>
+        </div>
+        </div>
+        <div class="margin">
+        <a href="C:\Users\jagan\OneDrive\Documents\tv1.jpg"><img src="C:\Users\jagan\OneDrive\Documents\tv2.jpg"></a>
+        <div class="product">
+          <h2>Elevate your viewing experience with the intelligence of our smart TV, where innovation meets entertainment seamlessly.</h2>
+          <p>32-inch Smart TVs: ₹12,000 to ₹25,000</p> 
+          <div class="button-container">
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="shopNow()">Shop Now</button>
+          </div>
+        </div>
+        </div>
+        </div>
+        <div class="gallery d-flex flex-row justify-content-start">
+        <div class="margin1">
+          <a href="C:\Users\jagan\OneDrive\Documents\washing1.avif"><img src="C:\Users\jagan\OneDrive\Documents\washing 2.jpeg"></a>
+          <div class="product">
+            <h2>Effortlessly tackle laundry day with our washing machine</h2>
+            <p>Fully Automatic Front Load Washing Machines: ₹20,000 to ₹70,000</p> 
+            <div class="button-container">
+              <button onclick="addToCart()">Add to Cart</button>
+              <button onclick="shopNow()">Shop Now</button>
+            </div>
+          </div>
+          </div>
+          <div class="margin1">
+            <a href="C:\Users\jagan\OneDrive\Documents\mixer1.png"><img src="C:\Users\jagan\OneDrive\Documents\mixer2.jpg"></a>
+            <div class="product">
+              <h2>Blend your culinary creations to perfection with our mixer</h2>
+              <p>Stand Mixers: ₹5,000 to ₹30,000</p> 
+              <div class="button-container">
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="shopNow()">Shop Now</button>
+              </div>
+            </div>
+            </div>
+            <div class="margin1">
+              <a href="C:\Users\jagan\OneDrive\Documents\fridge3.jpeg"><img src="C:\Users\jagan\OneDrive\Documents\fridge2.jpeg"></a>
+              <div class="product">
+                <h2>Chill vibes, small size. Our mini fridge keeps things cool in a compact package</h2>
+                <p>refrigerators ranging from around ₹10,000 for basic models to ₹3,00,000 </p> 
+                <div class="button-container">
+                  <button onclick="addToCart()">Add to Cart</button>
+                  <button onclick="shopNow()">Shop Now</button>
+                </div>
+              </div>
+              </div>
+
+      </div>
+      <div class="gallery d-flex flex-row justify-content-start">
+        <div class="margin2">
+          <a href="C:\Users\jagan\OneDrive\Documents\air2.jpg "><img src="C:\Users\jagan\OneDrive\Documents\aircooler1.jpg"></a>
+          <div class="product">
+            <h2>Revolutionizing freshness with every chill</h2>
+            <p>₹10,000 for basic models to ₹3,00,000</p> 
+            <div class="button-container">
+              <button onclick="addToCart()">Add to Cart</button>
+              <button onclick="shopNow()">Shop Now</button>
+            </div>
+          </div>
+          </div>
+          <div class="margin2">
+            <a href="C:\Users\jagan\OneDrive\Documents\vacuum2.avif"><img src="C:\Users\jagan\OneDrive\Documents\vaccum.webp"></a>
+            <div class="product">
+              <h2>Dust bunnies beware - we're coming!</h2>
+              <p>Stick Vacuum Cleaners: ₹5,000 to ₹20,000</p> 
+              <div class="button-container">
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="shopNow()">Shop Now</button>
+              </div>
+            </div>
+            </div>
+            <div class="margin2">
+              <a href="C:\Users\jagan\OneDrive\Documents\blender.jpeg"><img src="C:\Users\jagan\OneDrive\Documents\blender2.jpg"></a>
+              <div class="product">
+                <h2>Blend your way to bliss.</h2>
+                <p>Countertop Blenders: ₹2,000 to ₹15,000</p> 
+                <div class="button-container">
+                  <button onclick="addToCart()">Add to Cart</button>
+                  <button onclick="shopNow()">Shop Now</button>
+                </div>
+              </div>
+              </div>
+
+      </div>
+      <div class="gallery d-flex flex-row justify-content-start">
+        <div class="margin3">
+        <a href="C:\Users\jagan\OneDrive\Documents\house.jpg"><img src="C:\Users\jagan\OneDrive\Documents\house2.jpg"></a>
+        <div class="product">
+          <h2>Effortless cooking, cleaner kitchen air</h2>
+          <p>Standard Kitchen Chimneys: ₹10,000 to ₹30,000</p> 
+          <div class="button-container">
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="shopNow()">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="margin3">
+      <a href="C:\Users\jagan\OneDrive\Documents\light.jpg"><img src="C:\Users\jagan\OneDrive\Documents\light2.webp"></a>
+        <div class="product">
+          <h2>Let your home shine with modern sophistication.</h2>
+          <p>Pendant Lights: ₹2,000 to ₹50,000</p> 
+          <div class="button-container">
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="shopNow()">Shop Now</button>
+          </div>
+        </div>
+        </div>
+        <div class="margin3">
+        <a href="C:\Users\jagan\OneDrive\Documents\ac.jpg"><img src="C:\Users\jagan\OneDrive\Documents\ac2.webp"></a>
+        <div class="product">
+          <h2>Discover Our Powerful AC Solution</h2>
+          <p>Inverter ACs: ₹30,000 to ₹80,000</p> 
+          <div class="button-container">
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="shopNow()">Shop Now</button>
+          </div>
+        </div>
+        </div>
+        </div>
+        <div class="gallery d-flex flex-row justify-content-start">
+          <div class="margin4">
+          <a href="C:\Users\jagan\OneDrive\Documents\phone.jpg"><img src="C:\Users\jagan\OneDrive\Documents\mobile2.webp"></a>
+          <div class="product">
+            <h2>Empower your world in the palm of your hand, 
+
+              Stay connected, stay inspired, with every tap and swipe.</h2>
+            <p>Mid-range smartphones: ₹15,000 to ₹30,000</p> 
+            <div class="button-container">
+              <button onclick="addToCart()">Add to Cart</button>
+              <button onclick="shopNow()">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="margin4">
+          <a href="C:\Users\jagan\OneDrive\Documents\laptop1.jpg"><img src="C:\Users\jagan\OneDrive\Documents\laptop.jpg"></a>
+          <div class="product">
+            <h2>
+
+            Wherever you go, productivity follows, with every keystroke on your laptop.</h2>
+            <p>Premium laptops: ₹80,000 to ₹2,00,000+</p> 
+            <div class="button-container">
+              <button onclick="addToCart()">Add to Cart</button>
+              <button onclick="shopNow()">Shop Now</button>
+            </div>
+          </div>
+          </div>
+          <div class="margin4">
+          <a href="C:\Users\jagan\OneDrive\Documents\speaker.jpg"><img src="C:\Users\jagan\OneDrive\Documents\speaker1.jpg"></a>
+          <div class="product">
+            <h2>Let music be the voice of your soul, amplified through our speakers</h2>
+            <p>High-end Speakers: ₹20,000 to ₹1,00,000+</p> 
+            <div class="button-container">
+              <button onclick="addToCart()">Add to Cart</button>
+              <button onclick="shopNow()">Shop Now</button>
+            </div>
+          </div>
+          </div>
+          </div>
+          <div class="gallery d-flex flex-row justify-content-start">
+            <div class="margin5">
+            <a href="C:\Users\jagan\OneDrive\Documents\watch.avif"><img src="C:\Users\jagan\OneDrive\Documents\watch1.jpg"></a>
+            <div class="product">
+              <h2>Stay connected, stay stylish, with every beat of your heart</h2>
+              <p>Premium smartwatches: ₹30,000 to ₹1,00,000+</p> 
+              <div class="button-container">
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="shopNow()">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="margin5">
+            <a href="C:\Users\jagan\OneDrive\Documents\alexa.jpg"><img src="C:\Users\jagan\OneDrive\Documents\alexa1.webp"></a>
+            <div class="product">
+              <h2>Alexa, play my favorite song and set the mood just right</h2>
+              <p>Amazon Echo (4th Gen): ₹8,000 to ₹10,000</p> 
+              <div class="button-container">
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="shopNow()">Shop Now</button>
+              </div>
+            </div>
+            </div>
+            <div class="margin5">
+            <a href="C:\Users\jagan\OneDrive\Documents\headphone1.jpg"><img src="C:\Users\jagan\OneDrive\Documents\headphone.webp"></a>
+            <div class="product">
+              <h2>Immerse yourself in the rhythm of life with every beat, every note, every whisper</h2>
+              <p>High-end Headphones: ₹15,000 to ₹1,00,000+</p> 
+              <div class="button-container">
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="shopNow()">Shop Now</button>
+              </div>
+            </div>
+            </div>
+            </div>
+          
+      <div id="chat-icon" onclick="openChatbot()">
+        <!-- Chat bubble icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.486 2 2 6.486 2 12c0 2.596 1.12 5.042 3.059 6.725.223.178.439.348.64.515L8.22 21.88c.035.027.075.037.11.064.475.413 1.075.76 1.76.76.072 0 .143-.01.214-.015.052.004.103.015.155.015.323 0 .633-.084.908-.246l3.648-2.242c.179.054.365.1.558.14C18.947 19.999 22 16.446 22 12 22 6.486 17.514 2 12 2zm-1.117 6.046c-.638.11-1.25.327-1.828.646-.019.01-.035.027-.054.037-.04.027-.08.05-.12.082-.248.163-.477.35-.683.577-.01.014-.02.026-.03.04-.382.648-.57 1.397-.553 2.265 0 .108.015.215.026.32.023.206.08.404.173.587.016.04.03.083.05.12.093.14.205.268.327.383.004.004.01.006.014.01.428.334.918.574 1.45.68.063.01.127.015.19.025.314.04.63.062.952.062.003 0 .007-.002.01 0 .67-.013 1.28-.236 1.828-.647.036-.025.07-.05.106-.078.288-.217.523-.484.69-.798.03-.045.06-.086.085-.133.117-.23.214-.475.283-.73.028-.123.05-.25.05-.377 0-1.453-1.108-2.64-2.493-2.787z"/>
+        </svg>
+      </div>
+      <div class="video-container" id="videoContainer">
+        <!-- Correct embedding of a YouTube video -->
+        <iframe src="https://www.youtube.com/embed/Om6AQYvR1CM" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <button onclick="toggleSize()">Toggle Size</button>
+
+    
+      <div class="container2">
+        <h1> Share Your Feedback Here</h1>
+        <button id="openFormBtn">Feedback</button>
+        <form id="feedbackForm" style="display: none;">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+         
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+         
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+         
+          <button type="submit">Submit</button>
+        </form>
+        <div id="statusMessage"></div>
+      </div>
+      <div class="about-section">
+        <h1>Service Hub</h1>
+          <p>services</p>
+          <p>We make everything repaired will be fixed</p>
+      </div>
+      
+      <header class="header">
+        <nav  class="navbar">
+          <div class="menu-area">
+            <ul>
+  
+              <li id="service"><a href="service.html">Services</a>
+                <ul class="dropdown">
+                  <li id="custom"><a href="CUSTOMIZATION.html">CUSTOMIZATION</a></li>
+                  <li id="access"><a href="ACCESSORIES.html">ACCESSORIES</a></li>
+                  <li id="financ"><a href="FINANCIAL.html">FINANCIAL SERVICE</a></li>
+                  <li id="warra"><a href="WARRANTY.html">WARRANTY EXTENSION</a></li>
+                </ul>
+              </li>
+              <li><a href="Bookings.html">Bookings</a>
+                  <ul class="dropdown">
+                      
+                  </ul>
+              </li>
+              <li><a href="blogs.html">Blogs</a></li>
+             
+             
+                            
+            </ul>
+          </div>
+          
+          
+        </nav>
+      </header>
+  
+      <h2 style="text-align:center">Our Services</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="C:\Users\jagan\OneDrive\Documents\customization.jpg"  height="180" width="100">
+          <div class="container8">
+            <h2>CUSTOMIZATION</h2>
+            <p>We can customized our products </p>
+            <p><button class="button" id="1">CUSTOMIZATION</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+          <div class="card">
+            <img src= "C:\Users\jagan\OneDrive\Documents\warranty.webp"height="180" width="100">
+            <div class="container8">
+              <h2>WARRANTY EXTENSION</h2>
+              
+              <p>Add warranty for your product</p>
+              
+              <p><button class="button" id="4">WARRANTY EXTENSION</button></p>
+          
+  
+                  
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      <div class="column">
+        <div class="card">
+          <img src="C:\Users\jagan\OneDrive\Documents\financial.jpg" height="180" width="100">
+          <div class="container8">
+            <h2>FINANCIAL SERVICES</h2>
+            <p>Here financial services </p>
+            <p><button class="button" id="3">FINANCIAL SERVICES</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <h1>Service Provider Profiles</h1>
+    <div class="service-selection">
+        <button onclick="showElectricianProfiles()">Electrician</button>
+        
+    </div>
+    <div id="profile-container"></div>
+
+ 
+    <footer class="global-footer">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-xs-6 col-sm-3">
+                  
+              </div>
+              <div class="col-xs-6 col-sm-3">
+                  <nav class="nav-links">
+                              <ul class="nav-links__list">
+                                      <li class="nav-links__list-item"><a href="/about-asq" >About ASQ</a></li>
+                                      <li class="nav-links__list-item"><a href="/career" >Career Center</a></li>
+                                      <li class="nav-links__list-item"><a href="https://my.asq.org/communityguidelines" >Community Guidelines</a></li>
+                                      <li class="nav-links__list-item"><a href="/customer-services/contact-asq" title="Contact Us" >Contact Us</a></li>
+                                      <li class="nav-links__list-item"><a href="/ads" >Advertisers & Sponsors</a></li>
+                                      <li class="nav-links__list-item"><a href="/newsroom" >Newsroom</a></li>
+                                      <li class="nav-links__list-item"><a href="/privacy-policy" >Privacy & Legal</a></li>
+                                      <li class="nav-links__list-item"><a href="/quality-resources/why-publish-with-asq" >Publish with ASQ</a></li>
+                                      <li class="nav-links__list-item"><a href="/quality-press/ordering-information" >Book/Publications Returns</a></li>
+                                      <li class="nav-links__list-item"><a href="/training/faq#cancel" >Course Cancellations/Refunds</a></li>
+                                      <li class="nav-links__list-item"><a href="/site-map" >Site Map</a></li>
+                              </ul>
+                  </nav>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                  <div class="row">
+                      <div class="col-sm-10 col-sm-offset-2">
+                          <p>With members and customers in over 130 countries, ASQ brings together the people, ideas and tools that make our world work better.
+  <br>
+  <br>
+  ASQ celebrates the unique perspectives of our community of members, staff and those served by our society. Collectively, we are the voice of quality, and we increase the use and impact of quality in response to the diverse needs in the world.</p>
+  
+                                  <ul class="social-links">
+                                          <li><a href="https://www.linkedin.com/company/asq" alt="" target="_blank"><i class="fa fa-2x fab fa-linkedin"></i></a></li>
+                                          <li><a href="https://twitter.com/asq" alt="" target="_blank"><i class="fa fa-2x fab fa-twitter"></i></a></li>
+                                          <li><a href="https://www.facebook.com/ASQ" alt="" target="_blank"><i class="fa fa-2x fab fa-facebook"></i></a></li>
+                                  </ul>
+  
+                          <p >
+  © 2024 American Society for Quality. All rights reserved.                        </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+
+
+ 
+  
+    
+    <script>
+      var loginButton = document.getElementById("loginButton");
+
+            // Add event listener for the click event
+            loginButton.addEventListener("click", function() {
+                // Redirect the user to the login page
+                window.location.href = "login.html";
+            });
+            document.getElementById('searchForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent form submission
+    var searchTerm = document.getElementById('searchInput').value;
+    if(searchTerm.trim() !== '') {
+        // You can perform your search logic here, like AJAX request to the server
+        // For now, let's just display the search term in a div
+        document.getElementById('searchResults').innerHTML = '<p>Search Product: ' + searchTerm + '</p>';
+    } else {
+        alert('Please enter a search term');
+    }
+});
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function addToCart() {
+  // Your logic to add the item to the cart goes here
+  alert("Item added to cart!");
+}
+
+function shopNow() {
+  // Your logic to navigate to the shop page goes here
+  window.location.href = "shop.html"; // Replace "shop.html" with the URL of your shop page
+}
+function openChatbot() {
+      window.open("chatbot.html", "_blank", "fullscreen=yes");
+    }
+    document.getElementById('openFormBtn').addEventListener('click', function() {
+  var feedbackForm = document.getElementById('feedbackForm');
+  if (feedbackForm.style.display === 'none') {
+    feedbackForm.style.display = 'block';
+  } else {
+    feedbackForm.style.display = 'none';
+  }
+});
+
+document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission
+  var formData = new FormData(this); // Get form data
+
+  // You can handle the form data submission using AJAX or any other method you prefer
+ 
+  // Display a message to the user
+  var statusMessage = document.getElementById('statusMessage');
+  statusMessage.innerHTML = 'Thank you for your feedback!';
+  // You might want to clear the form fields here
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const contactInfo = document.querySelector(".contact-info");
+    const contactForm = document.querySelector(".contact-form");
+
+    contactInfo.addEventListener("click", function () {
+        contactForm.style.display = "block";
+    });
+});
+function getSuggestions() {
+    var serviceSelect = document.getElementById("service-select");
+    var selectedService = serviceSelect.options[serviceSelect.selectedIndex].value;
+    var suggestionsContainer = document.getElementById("suggestions");
+
+    // Clear previous suggestions
+    suggestionsContainer.innerHTML = "";
+
+    // Fetch service providers based on the selected service
+    var serviceProviders = getServiceProviders(selectedService);
+
+    // Display suggestions
+    suggestionsContainer.innerHTML = "<h2>Suggested Service Providers</h2>";
+    if (serviceProviders.length > 0) {
+        var list = "<ul>";
+        serviceProviders.forEach(function(provider) {
+            list += "<li>" + provider.name + " - " + provider.contact + "</li>";
+        });
+        list += "</ul>";
+        suggestionsContainer.innerHTML += list;
+    } else {
+        suggestionsContainer.innerHTML += "<p>No service providers found.</p>";
+    }
+}
+
+// Function to fetch service providers based on the selected service
+function showElectricianProfiles() {
+    var electricianProfiles = [
+        {
+            name: "Rahul Kumar",
+            image: "C:\\Users\\jagan\\OneDrive\\Documents\\service3.avif",
+            profession: "Skilled Electrical Technician",
+            description: "Hi, I'm Rahul Kumar, your skilled electrical technician. With a passion for solving electrical challenges and a commitment to excellence, I strive to deliver top-quality service to every client.",
+            contact: {
+                phone: "+91-9876543215",
+               email: "rahul.electrical@example.com"
+            }
+        },
+        {
+            name: "Amit Patel",
+            image: "C:\\Users\\jagan\\OneDrive\\Documents\\service5.jpg",
+            profession: "Laptop Repair Expert",
+            description: "Hi, I'm Amit Patel, your go-to guy for laptop repairs. With extensive experience in the field and a commitment to customer satisfaction, I'm here to tackle all your laptop woes.",
+            contact: {
+                phone: "+91-9876543212",
+                email: "amit.laptop@example.com"
+            }
+        },
+        {
+            name: "Rajesh Kumar",
+            image: "C:\\Users\\jagan\\OneDrive\\Documents\\service1.png",
+            profession: "Electronics Repair Specialist",
+            description: "Namaste! I'm Rajesh Kumar, your trusted electronics repair specialist. With years of experience and a deep understanding of technology, I'm here to solve all your electronic woes.",
+            contact: {
+                phone: "+91-9876543210",
+                email: "rajesh.repair@example.com"
+            }
+        },
+        
+        {
+            name: "Arun Singh",
+            image: "C:\\Users\\jagan\\OneDrive\\Documents\\service2.jpeg",
+            profession: "Reliable Electrical Contractor",
+            description: "Hello, I'm Arun Singh, your reliable electrical contractor serving residential and commercial clients. With a focus on quality workmanship and customer satisfaction, I'm dedicated to meeting your electrical needs.",
+            contact: {
+                phone: "+91-9876543216",
+                email: "arun.contractor@example.com"
+            }
+        }
+      ];
+
+    displayProfiles(electricianProfiles);
+}
+
+function displayProfiles(profiles) {
+    var profileContainer = document.getElementById("profile-container");
+    profileContainer.innerHTML = ""; // Clear previous profiles
+
+    profiles.forEach(function(profile) {
+        var profileDiv = document.createElement("div");
+        profileDiv.classList.add("profile");
+
+        profileDiv.innerHTML = `
+            <img src="${profile.image}" alt="${profile.name} - Profile Picture">
+            <div class="info">
+                <h2>${profile.name} - ${profile.profession}</h2>
+                <p>${profile.description}</p>
+                <p>Contact Information: Contact me at: ${profile.contact.phone} | Email: ${profile.contact.email}</p>
+            </div>
+        `;
+
+        profileContainer.appendChild(profileDiv);
+    });
+}
+function toggleSize() {
+            var container = document.getElementById('videoContainer');
+            if (container.style.width === '960px') {
+                container.style.width = '640px';
+                container.style.height = '360px';
+            } else {
+                container.style.width = '960px';
+                container.style.height = '540px';
+            }
+        }
+
+
+
+
+    </script>
+     
+   </body>
+</html>

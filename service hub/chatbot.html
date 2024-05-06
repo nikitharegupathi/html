@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create Your Own Chatbot</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="chatbot.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
+  </head>
+  <body>
+<body>
+  <div class="card">
+    <div id="header">
+      <h1>Market Hub!!</h1>
+    </div>
+    <div id="message-section">
+      <div class="message" id="bot"><span id="bot-response">Hello.. How can I assist you?</span></div>
+    </div>
+    <div id="input-section">
+      <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus"/>
+      <button class="send" onclick="sendMessage()">
+        <div class="circle"><i class="zmdi zmdi-mail-send"></i></div>
+      </button>
+    </div>
+  </div>
+  <script>
+    const userMessage = [
+    ["hi", "hey", "hello"],
+    ["product inquiry", "service inquiry"],
+    ["are you knowledgeable about products", "are you familiar with services"],
+    ["how can I purchase", "how do I place an order", "how to buy"],
+    ["how to return a product", "how to request a refund"],
+    ["what are your payment options", "how can I pay"],
+    ["do you offer discounts", "are there any promotions"],
+    ["do you have this product in stock", "availability of product"],
+    ["can I track my order", "order tracking"],
+    ["do you offer international shipping", "shipping options"],
+    ["can I cancel my order", "order cancellation policy"],
+    ["what is your return policy", "how to initiate a return"],
+    ["what are your customer service hours", "how to contact support"]
+    // Add more inquiries as needed
+  ];
+  
+  const botReply = [
+    ["Hello!", "Hi!", "Hey!", "Hi there!"],
+    ["Sure, what product or service are you interested in?"],
+    ["Yes, I can provide information about our products and services."],
+    ["To purchase, simply add the desired items to your cart and proceed to checkout."],
+    ["To return a product, please visit our Returns & Refunds page for instructions."],
+    ["We accept various payment methods including credit/debit cards, PayPal, and more."],
+    ["Yes, we often have discounts and promotions. Check our website or subscribe to our newsletter for updates."],
+    ["Please check the product page for availability or contact our customer support."],
+    ["Yes, you can track your order using the tracking number provided in the confirmation email."],
+    ["Yes, we offer international shipping to select countries. Shipping options and rates may vary."],
+    ["You can cancel your order before it has been shipped. Please contact us for assistance."],
+    ["Our return policy allows for returns within 30 days of purchase. Please see our Returns & Refunds page for details."],
+    ["Our customer service is available from Monday to Friday, 9 AM to 5 PM. You can contact us via phone or email."],
+    // Add corresponding replies for each inquiry
+  ];
+  
+  const alternative = [
+    "I'm sorry, I didn't catch that. Could you please repeat or ask something else?",
+    "I'm here to assist you. What else would you like to know?",
+    "Hmm, let's focus on products and services. What's on your mind?"
+    // Add more alternative responses as needed
+  ];
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const sendButton = document.getElementById("sendButton");
+    const inputField = document.getElementById("input");
+  
+    sendButton.addEventListener("click", function() {
+      sendMessage();
+    });
+  
+    inputField.addEventListener("keydown", function(e) {
+      if (e.code === "Enter") {
+        sendMessage();
+      }
+    });
+  });
+  
+  function sendMessage() {
+    const inputField = document.getElementById("input");
+    let input = inputField.value.trim();
+    input != "" && output(input);
+    inputField.value = "";
+  }
+  
+  function output(input) {
+    let product;
+  
+    let text = input.toLowerCase().replace(/[^\w\s\d]/gi, "");
+  
+    text = text
+      .replace(/[\W_]/g, " ")
+      .replace(/ a /g, " ")
+      .replace(/i feel /g, "")
+      .replace(/whats/g, "what is")
+      .replace(/please /g, "")
+      .replace(/ please/g, "")
+      .trim();
+  
+    let comparedText = compare(userMessage, botReply, text);
+  
+    product = comparedText
+      ? comparedText
+      : alternative[Math.floor(Math.random() * alternative.length)];
+    addChat(input, product);
+  }
+  
+  function compare(triggerArray, replyArray, string) {
+    let item;
+    for (let x = 0; x < triggerArray.length; x++) {
+      for (let y = 0; y < replyArray.length; y++) {
+        if (triggerArray[x][y] == string) {
+          items = replyArray[x];
+          item = items[Math.floor(Math.random() * items.length)];
+        }
+      }
+    }
+    //containMessageCheck(string);
+    if (item) return item;
+    else return containMessageCheck(string);
+  }
+  
+  function containMessageCheck(string) {
+    let expectedReply = [
+      [
+        "Good Bye.See you again!",
+        "Bye, See you!",
+        "Bye. Take care!"
+      ],
+      ["Good Night", "Have a sound sleep", "Sweet dreams"],
+      ["Have a pleasant evening!", "Good evening ", "Evening!"],
+      ["Good morning, Have a great day!", "Morning"],
+      ["Good Afternoon", "Noon", "Afternoon"]
+    ];
+    let expectedMessage = [
+      ["bye", "tc", "take care"],
+      ["night", "good night"],
+      ["evening", "good evening"],
+      ["morning", "good morning"],
+      ["noon"]
+    ];
+    let item;
+    for (let x = 0; x < expectedMessage.length; x++) {
+      if (expectedMessage[x].includes(string)) {
+        items = expectedReply[x];
+        item = items[Math.floor(Math.random() * items.length)];
+      }
+    }
+    return item;
+  }
+  
+  function addChat(input, product) {
+    const mainDiv = document.getElementById("message-section");
+    let userDiv = document.createElement("div");
+    userDiv.id = "user";
+    userDiv.classList.add("message");
+    userDiv.innerHTML = `<span id="user-response">${input}</span>`;
+    mainDiv.appendChild(userDiv);
+  
+    let botDiv = document.createElement("div");
+    botDiv.id = "bot";
+    botDiv.classList.add("message");
+    botDiv.innerHTML = `<span id="bot-response">${product}</span>`;
+    mainDiv.appendChild(botDiv);
+  }
+  </script>
+</body>
+</html> 
